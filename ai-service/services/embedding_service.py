@@ -1,6 +1,5 @@
 import numpy as np
 import logging
-import google.generativeai as genai
 
 logger = logging.getLogger(__name__)
 
