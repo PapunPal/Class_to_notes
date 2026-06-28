@@ -29,16 +29,16 @@ const seedDatabase = async () => {
     console.log('Creating users...');
     const admin = await User.create({
       name: 'System Admin',
-      email: 'admin@classnotes.com',
-      password: 'admin123',
+      email: 'admin@gmail.com',
+      password: 'Papun@3829',
       role: 'admin',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=150&h=150&q=80'
     });
 
     const teacher = await User.create({
       name: 'Dr. Helen Carter',
-      email: 'teacher@classnotes.com',
-      password: 'teacher123',
+      email: 'teacher@gmail.com',
+      password: 'Papun@3829',
       role: 'teacher',
       avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?fit=crop&w=150&h=150&q=80'
     });
