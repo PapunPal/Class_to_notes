@@ -79,7 +79,7 @@ const LectureHistory = () => {
 
   const handlePlayPause = (lectureId, audioUrl) => {
     const backendUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-    const fullAudioUrl = `${backendUrl}${audioUrl}`;
+    const fullAudioUrl = audioUrl.startsWith('http') ? audioUrl : `${backendUrl}${audioUrl}`;
 
     if (playingId === lectureId) {
       audioRef.current.pause();
