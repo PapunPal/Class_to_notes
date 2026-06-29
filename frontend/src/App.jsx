@@ -14,6 +14,7 @@ import DashboardLayout from './layouts/DashboardLayout';
 import ProtectedRoute from './routes/ProtectedRoutes';
 
 // Pages
+import LandingPage from './pages/LandingPage';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Profile from './pages/Profile';
@@ -99,8 +100,8 @@ function App() {
         <AuthProvider>
           <BrowserRouter>
             <Routes>
-              {/* Root Redirect */}
-              <Route path="/" element={<RootRedirect />} />
+              {/* Landing Page */}
+              <Route path="/" element={<LandingPage />} />
 
               {/* Public Auth Routes */}
               <Route element={<AuthLayout />}>
