@@ -49,7 +49,7 @@ class GeminiService:
             return self._generate_mock_response(prompt)
         
         try:
-            model_name = "gemini-2.5-flash"
+            model_name = "gemini-2.0-flash"
             
             # Setup configuration using types.GenerateContentConfig
             config = types.GenerateContentConfig(
@@ -103,7 +103,7 @@ class GeminiService:
             logger.info("Audio file processed. Generating transcript...")
             response = self._call_with_retry(
                 self.client.models.generate_content,
-                model="gemini-2.5-flash",
+                model="gemini-2.0-flash",
                 contents=[
                     file_info,
                     "Please provide a complete and word-for-word transcript of this audio. Do not summarize, transcribe exactly what is spoken."
