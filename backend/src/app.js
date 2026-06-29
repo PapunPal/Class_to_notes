@@ -31,7 +31,7 @@ app.use(morgan('dev'));
 // CORS setup
 const allowedOrigins = process.env.ALLOWED_ORIGINS
   ? process.env.ALLOWED_ORIGINS.split(',')
-  : ['http://localhost:5173', 'http://localhost:5174'];
+  : ['https://classtonote.onrender.com','http://localhost:5173', 'http://localhost:5174'];
 
 app.use(cors({
   origin: (origin, callback) => {
